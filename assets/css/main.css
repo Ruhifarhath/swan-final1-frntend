@@ -523,6 +523,16 @@ section {
   }
 }
 
+/*----------------------------------
+# Team Members
+------------------------------------*/
+
+#guide {
+  margin: ;
+}
+
+
+
 /*--------------------------------------------------------------
 # Posts
 --------------------------------------------------------------*/
@@ -1672,4 +1682,130 @@ section {
   width: 100%;
   position: absolute;
   border: 0;
+}
+
+#membersSub-div{
+  margin-top: 80px;
+}
+#search-result #members-title{
+  text-align: center;
+}
+#members-div{
+  width: 100%;
+}
+
+/* Standard layout for post-entry-2 */
+.d-md-flex.post-entry-2.small-img .thumbnail {
+  order: 0;
+}
+
+.d-md-flex.post-entry-2.small-img .post-meta,
+.d-md-flex.post-entry-2.small-img .h3,
+.d-md-flex.post-entry-2.small-img .p,
+.d-md-flex.post-entry-2.small-img .author {
+  order: 1;
+}
+
+/* Reversed layout for every other post-entry-2 */
+.d-md-flex.post-entry-2.small-img.reverse-layout .thumbnail {
+  order: 1;
+}
+
+.d-md-flex.post-entry-2.small-img.reverse-layout .post-meta,
+.d-md-flex.post-entry-2.small-img.reverse-layout .h3,
+.d-md-flex.post-entry-2.small-img.reverse-layout .p,
+.d-md-flex.post-entry-2.small-img.reverse-layout .author {
+  order: 0;
+}
+
+/* Ensuring all images have a uniform size */
+.post-entry-2.small-img .thumbnail img {
+  width: 100%;
+  height: 200px; /* Adjust the height as needed */
+  object-fit: contain; /* Adjust as needed */
+  object-position: center; /* Adjust as needed */
+}
+
+
+.team {
+  padding: 40px 0;
+}
+
+.category-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(33.333% - 20px); /* Adjust as necessary for the desired width */
+  margin: 10px; /* Add margin for spacing between members */
+  box-sizing: border-box;
+}
+
+#guide, #visitProf {
+  width: 100%; /* Ensure these are full width to center align */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Add margin to space between these sections */
+}
+
+#guide .team-member, #visitProf .team-member {
+  width: auto; /* Allow the content to auto-size */
+}
+
+.team-member .thumbnail {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
+.team-member .thumbnail img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.team-member .member-info {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.team-member .member-meta {
+  margin-bottom: 10px;
+}
+
+.team-member .member-meta .title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.team-member .name {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.team-member .description {
+  margin-bottom: 20px;
+}
+
+.team-member .social-links a {
+  margin-right: 10px;
+  font-size: 1.2em;
+  color: #333;
+  text-decoration: none;
+}
+
+.team-member .social-links a:hover {
+  color: #007bff;
 }
