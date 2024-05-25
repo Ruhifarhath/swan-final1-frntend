@@ -46,6 +46,10 @@ h6 {
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
+#pdt-img{
+  border-radius: 20px;
+  height: fit-content;
+}
 #header #swan-title{
   margin-left: -40px;
 }
@@ -71,6 +75,10 @@ section {
 }
 #hero-slider {
   height: 800px;
+}
+
+.pdt-img{
+  border-radius: 20px;
 }
 /*--------------------------------------------------------------
 # Scroll top button
@@ -1726,7 +1734,6 @@ section {
   object-position: center; /* Adjust as needed */
 }
 
-
 .team {
   padding: 40px 0;
 }
@@ -1808,4 +1815,272 @@ section {
 
 .team-member .social-links a:hover {
   color: #007bff;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: px; /* Adjust the gap between team members as needed */
+  padding: 20px; /* Add some padding if desired */
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(33.333% - 20px);
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+
+.team-member .thumbnail {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
+.team-member .thumbnail img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.team-member .member-info {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.team-member .member-meta {
+  margin-bottom: 10px;
+}
+
+.team-member .member-meta .title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.team-member .name {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.team-member .description {
+  margin-bottom: 20px;
+}
+
+.team-member .social-links a {
+  margin-right: 10px;
+  font-size: 1.2em;
+  color: #333;
+  text-decoration: none;
+}
+
+.team-member .social-links a:hover {
+  color: #007bff;
+}
+
+
+/*------------------------------------------------------------
+# M.tech Students
+-----------------------------------------------------------*/
+
+.container-mtech {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+} 
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.thesis-list {
+  list-style: none;
+  padding: 0;
+}
+
+.thesis-list li {
+  margin-bottom: 15px;
+  line-height: 1.5;
+  border-bottom: 1px solid #444;
+  padding-bottom: 10px;
+}
+
+.thesis-list li:last-child {
+  border-bottom: none;
+}
+
+
+
+/*------------------------------------------------------------
+# Publicatiions Students
+-----------------------------------------------------------*/
+/* 
+.container-publications {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+.paper {
+  background-color: #fafafa;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-left: 5px solid #252825;
+  border-radius: 4px;
+}
+.paper:nth-child(even) {
+  border-left-color: #b4b5b7;
+}
+.title {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+  color: #444;
+}
+.authors, .publication {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+.award {
+  background-color: #6ab9f9;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 5px;
+} */
+
+body {
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+.container-publications {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.paper {
+  background-color: #f9f9f9;
+   /* border-bottom: 3px solid #3bbaff;  */
+    border-left: 8px solid #3b90ff;
+
+
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+.paper:nth-child(even) {
+  /* border-left-color: #5df4ff; */
+}
+.paper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.title {
+  font-size: 18px;
+  color: #333;
+  margin: 0 0 10px;
+  font-weight: 600;
+}
+.authors {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.publication {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.award {
+  background-color: #3b90ff;
+  color: #ffffff;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+#page-number {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #0e0d0d;
+  border-radius: 0px;
+  padding: 8px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+  transition: background-color 0.3s ease;
+}
+
+#page-number:hover {
+  background-color: #0056b3;
+}
+
+.container-publications {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  background-color: #3689fe;
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+}
+
+tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody td:first-child {
+  font-weight: bold;
 }
