@@ -42,7 +42,7 @@
   
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    <div class="container-fluid d-flex align-items-center">
       
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
@@ -54,7 +54,7 @@
       </a>
       <br>
   
-      <nav id="navbar" class="navbar">
+      <nav id="navbar" class="navbar mx-auto">
         <ul>
           <!-- <li> <a href="#announce"><h5>Announcements</h5></a></li> -->
           <li class="dropdown"><a href="cat"><span><h5>Members</h5></span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
@@ -95,7 +95,25 @@
               
             </ul>
           </li>
-          <li class="dropdown"><a href="products.html"><span><h5>Products</h5></span></a>
+          <li class="dropdown"><a href="products.html"><span><h5>Products</h5></span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="search-result.html">Search Result</a></li>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="products.html"><span><h5>Patents</h5></span> </i></a>
             <!-- <ul>
               <li><a href="search-result.html">Search Result</a></li>
               <li><a href="#">Drop Down 1</a></li>
@@ -113,14 +131,41 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul> -->
           </li>
-          <li class="dropdown"><a href="category.html"><span><h5>Patents</h5></span> </i></a>
-            
+          <li class="dropdown"><a href="products.html"><span><h5>Projects</h5></span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="search-result.html">Search Result</a></li>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
           </li>
-          <li class="dropdown"><a href="projects.html"><span><h5>Projects</h5></span> </a>
-           
-          </li>
-          <li class="dropdown"><a href="sponsors.html"><span><h5>Sponsors</h5></span></a>
-            
+          <li class="dropdown"><a href="products.html"><span><h5>Sponsors</h5></span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="search-result.html">Search Result</a></li>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
           </li>
           <li class="dropdown"><a href="gallery.html"><span><h5>Gallery</h5></span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
@@ -163,7 +208,7 @@
         </div><!-- End Search Form -->
 
       </div>
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="index.html" class="logo d-flex ms-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <img id="swan-logo" src="https://cse.iitkgp.ac.in/~smisra/swan/SWAN-Logo.png" alt="swan-logo">
@@ -178,13 +223,13 @@
   <main id="main">
     <section>
       <div id="pdt-container">
-        <div class="row">
+        <div class="row m-0">
 
           <div  class="col-md-9" data-aos="fade-up">
             <h3 class="category-title">Our Products</h3>
 
             <div class="d-md-flex post-entry-2 half">
-              <a href="single-post.html" class="me-4 thumbnail">
+              <a href="single-post.html" class="thumbnail">
                 <img id="pdt-img" src="assets/img/Products/agrisens.png" alt="" class="img-fluid">
               </a>
               <div>
@@ -203,7 +248,7 @@
             </div>
 
             <div class="d-md-flex post-entry-2 half">
-              <a href="single-post.html" class="me-4 thumbnail">
+              <a href="single-post.html" class="thumbnail">
                 <img id="pdt-img" src="assets/img/Products/ambusens.png" alt="" class="img-fluid">
               </a>
               <div>
@@ -222,7 +267,7 @@
             </div>
 
             <div class="d-md-flex post-entry-2 half">
-              <a href="single-post.html" class="me-4 thumbnail">
+              <a href="single-post.html" class="thumbnail">
                 <img id="pdt-img" src="assets/img/Products/agriwsn.png" alt="" class="img-fluid">
               </a>
               <div>
@@ -241,7 +286,7 @@
             </div>
 
             <div class="d-md-flex post-entry-2 half">
-              <a href="single-post.html" class="me-4 thumbnail">
+              <a href="single-post.html" class="thumbnail">
                 <img id="pdt-img" src="assets/img/Products/GWS.png" alt="" class="img-fluid">
               </a>
               <div>
@@ -261,9 +306,9 @@
 
             
 
-            <div class="text-start py-4">
+            <div class="text-start py-4 d-flex justify-content-center">
               <div class="custom-pagination">
-                <a href="#" class="prev">Prevous</a>
+                <a href="#" class="prev">Previous</a>
                 <a href="#" class="active">1</a>
                 <a href="#">2</a>
                 <a href="#">3</a>
