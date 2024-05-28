@@ -47,9 +47,6 @@
   # Sections & Section Header
   --------------------------------------------------------------*/
 
-  #header #swan-title{
-    margin-left: -40px;
-  }
   section {
     padding: 40px 0;
     overflow: hidden;
@@ -410,10 +407,7 @@
   .mobile-nav-toggle {
     display: none;
   }
-  #swan-logo{
-    margin-left: 5rem;
-    
-  }
+  
   #iit-logo{
     margin-left: 1rem;
     width: 45px;
@@ -602,9 +596,7 @@
   
   
   /* updated styles */
-  #countsAndAnnounce{
-    margin-top: -120px;
-  }
+
   #announce {
     width: 100%; /* Make sure it takes full width of its column */
   }
@@ -2092,15 +2084,9 @@
   height: 200px;
 }
 
-#pdt-container{
-  margin-left: 15%;
- 
-}
+  
 
-#pdt-info{
-  margin-top: ;
-  margin-left:-100px;
-}
+
 
 
 
