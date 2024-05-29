@@ -1966,7 +1966,6 @@
     color: #000000;
     margin-right: 40px;
     background-color: #fff;
-    padding: 15px;
     border-radius: 50%;
     width: 50px; /* Set the width */
     height: 50px; /* Set the height */
@@ -1975,6 +1974,9 @@
     justify-content: center;
     font-weight: bold;
     position: relative; /* Add this to position the pseudo-element */
+  }
+  #paper-num h2{
+    font-size: 1.5rem;
   }
   
   #paper-num::after {
@@ -1998,7 +2000,6 @@
   }
   h1 {
     text-align: center;
-    color: #ffffff;
     margin-top: 80px;
     margin-bottom: 30px;
     font-weight: 600;
@@ -2009,7 +2010,7 @@
     background-color: #ffff;
      /* border-bottom: 3px solid #3bbaff;  */
     border-bottom: 2px solid #c6cbc6;
-    width: 600px;
+    
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 0px;
@@ -2126,20 +2127,23 @@
 }
 .course-item img {
   /* max-width: 100%; */
-  object-fit: contain;
+  height: 15rem;
+  width:100%;
+  object-fit: fill;  
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 .course-item #tribe-img{
-    object-fit: contain;
-    height: 20rem;
+    object-fit: fill;
+    height: 15rem;
     aspect-ratio: 3;
 }
 .course-content {
   padding: 20px;
 }
 .course-content .category {
-  font-size: 22px;
+  height: 5rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #000000;
 }
