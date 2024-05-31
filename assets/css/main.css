@@ -42,6 +42,34 @@
   #main {
     margin-top: 90px;
   }
+
+  /*--------------------------------------------------------------
+  # Sections & Section Header
+  --------------------------------------------------------------*/
+
+  #header #swan-title{
+    font-size: 24px;
+  }
+  #header #iit-title{
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  #header #swan-logo, #header #iit-logo{
+    margin-bottom: 10px;
+  }
+  #header #iit-logo{
+    margin-top: 5px;
+    margin-right: 20px;
+  }
+  #header #swan-logoT{
+     margin-left: 20px;
+  }
+  #header #swan-logoT #swan-title{
+    margin-left: 12px;
+  }
+
+  
+
   
   /*--------------------------------------------------------------
   # Sections & Section Header
@@ -57,7 +85,8 @@
   }
   
   .section-header h2 {
-    font-size: 50px;
+    font-weight: 50;
+    font-size: 100px;
     color: var(--color-black);
   }
   
@@ -66,11 +95,45 @@
   }
   #hero-slider #swan-heading{
       text-align: center;
+      font-size: 50px;
+      font-weight: 110;
+      margin-top: -0.5%;
+      margin-bottom: -5px;
   }
   #hero-slider {
     height: 800px;
+    width: 100%;
+    margin-bottom: -10%;
   }
-  
+  #hero-slider #home-slide-img{
+    width: 100%;
+    height: 500px;
+  }
+
+  /*--------------------------------------------------------------
+  # CountsAndAnnounce
+  --------------------------------------------------------------*/
+  #countsAndAnnounce{
+    background-color: rgb(254, 254, 254);
+    margin-top: -10%;
+  }
+
+  /*-------------------------------------------------------------
+  # facts( we are a group of part)
+  --------------------------------------------------------------*/
+  #facts{
+    margin-top: -10%;
+  }
+  #facts h1{
+    font-size: 30px;
+    font-weight: 500;
+  }
+  #facts #count-box p{
+    /* margin-top: -20px;  MARGIN STYLES NOT BEING*/
+    font-family: var(--font-primary);
+  }
+
+
   /*--------------------------------------------------------------
   # Scroll top button
   --------------------------------------------------------------*/
@@ -219,61 +282,49 @@
   }
   
   /*--------------------------------------------------------------
-  # Services
+  # Services- Domains of Research
   --------------------------------------------------------------*/
-  .services .icon-box {
+  #dor #section-title h1{
+      font-size: 40px;
+      font-weight: 100;
+  }
+  .dor .icon-box {
     text-align: center;
-    border: 1px solid #ebebeb;
-    padding: 80px 20px;
+    border-radius: 2px;
+    padding: 40px 30px;
     transition: all ease-in-out 0.3s;
-    background: #fff;
+    background: #f9f9f9ab;
   }
   
-  .services .icon-box .icon {
-    margin: 0 auto;
-    width: 64px;
-    height: 64px;
-    background: #ffc451;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    transition: 0.3s;
+  .dor .icon-box img {
+      border-radius: 4px;
+      height: 250px;
+      width: 350px;
   }
-  
-  .services .icon-box .icon i {
-    color: #151515;
-    font-size: 28px;
-    transition: ease-in-out 0.3s;
-  }
-  
-  .services .icon-box h4 {
-    font-weight: 700;
-    margin-bottom: 15px;
+   
+  .dor .icon-box h4 {
+    font-weight: 500;
+    margin: 15px;
     font-size: 24px;
   }
   
-  .services .icon-box h4 a {
+  .dor .icon-box h4 a {
     color: #151515;
     transition: ease-in-out 0.3s;
   }
   
-  .services .icon-box h4 a:hover {
-    color: #ffc451;
-  }
-  
-  .services .icon-box p {
+
+  .dor .icon-box p {
     line-height: 24px;
     font-size: 14px;
     margin-bottom: 0;
   }
   
-  .services .icon-box:hover {
-    border-color: #fff;
+  .dor .icon-box:hover {
     box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
     transform: translateY(-10px);
   }
+
   /*--------------------------------------------------------------
   # Desktop Navigation 
   --------------------------------------------------------------*/
@@ -594,9 +645,9 @@
   }
   
   
-  
-  /* updated styles */
-
+  /*-----------------------------------
+  # Annouhncement Section
+  -----------------------------------*/
   #announce {
     width: 100%; /* Make sure it takes full width of its column */
   }
@@ -730,104 +781,6 @@
   
   
   
-  /*-------------------end here updates------------*/
-  
-  
-   /* Announcement Section  */
-  
-  
-  /* #announce{
-    width: 888px;
-    margin-top: -130px;
-    margin-left: 50%;
-  }
-  #announce h3{
-    text-align: center;
-  }
-  .trending {
-    border: 1px solid rgba(var(--color-black-rgb), 0.1);
-  }
-  
-  .trending>h3 {
-    color: var(--color-black);
-    padding: 20px;
-    border-bottom: 1px solid rgba(var(--color-black-rgb), 0.1);
-  }
-  
-  .trending .trending-post-container {
-    height: 800px;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .trending .trending-post {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: block;
-    position: absolute;
-    width: 100%;
-  }
-  
-  .trending .trending-post li {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: block;
-  }
-  
-  .trending .trending-post li a {
-    display: block;
-    padding: 20px;
-    border-bottom: 1px solid rgba(var(--color-black-rgb), 0.1);
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .trending .trending-post li a .number {
-    position: absolute;
-    z-index: -1;
-    font-size: 5rem;
-    left: -10px;
-    top: -20px;
-    font-weight: 700;
-    color: rgba(var(--color-black-rgb), 0.05);
-  }
-  
-  .trending .trending-post li a h3 {
-    font-size: 18px;
-    color: rgba(var(--color-black-rgb), 0.9);
-  }
-  
-  .trending .trending-post li a .author {
-    color: rgba(var(--color-black-rgb), 0.7);
-    font-weight: 500;
-  }
-  
-  .trending .trending-post li a:hover h3 {
-    color: rgba(var(--color-black-rgb), 1);
-  }
-  
-  .trending .trending-post li:last-child a {
-    border-bottom: none;
-  }
-  
-  @keyframes marquee {
-    from {
-      transform: translateY(100%);
-    }
-    to {
-      transform: translateY(-100%);
-    }
-  }
-  
-  .marquee {  
-    animation: marquee 15s linear infinite;
-  }
-  
-  .marquee:hover {
-    animation-play-state: paused;
-  } */
   
   .post-entry-2 {
     margin-bottom: 30px;
@@ -1115,34 +1068,34 @@
     font-family: var(--font-secondary);
     margin: 5px;
     transition: 0.3s all ease;
-  }
-  
-  .custom-pagination a.active {
+}
+
+.custom-pagination a.active {
     background: var(--color-black);
     color: var(--color-white);
-  }
-  
-  .custom-pagination a.active:hover {
+}
+
+.custom-pagination a.active:hover {
     background: rgba(var(--color-black-rgb), 0.9);
-  }
-  
-  .custom-pagination a:hover {
+}
+
+.custom-pagination a:hover {
     background: rgba(var(--color-black-rgb), 0.1);
-  }
-  
-  .custom-pagination a.prev,
-  .custom-pagination a.next {
+}
+
+.custom-pagination a.prev,
+.custom-pagination a.next {
     width: auto !important;
     border-radius: 4px;
     padding-left: 10px;
     padding-right: 10px;
-  }
-  
-  .custom-pagination a.prev:hover,
-  .custom-pagination a.next:hover {
+}
+
+.custom-pagination a.prev:hover,
+.custom-pagination a.next:hover {
     background: rgba(var(--color-black-rgb), 0.1);
-  }
-  
+}
+
   /* custom tab nav on sidebar */
   .aside-block {
     margin-bottom: 30px;
@@ -1680,72 +1633,42 @@
     border: 0;
   }
   
-  #membersSub-div{
-    margin-top: 80px;
-  }
-  #search-result #members-title{
-    text-align: center;
-  }
-  #members-div{
-    width: 100%;
-  }
-  
-  /* Standard layout for post-entry-2 */
-  .d-md-flex.post-entry-2.small-img .thumbnail {
-    order: 0;
-  }
-  
-  .d-md-flex.post-entry-2.small-img .post-meta,
-  .d-md-flex.post-entry-2.small-img .h3,
-  .d-md-flex.post-entry-2.small-img .p,
-  .d-md-flex.post-entry-2.small-img .author {
-    order: 1;
-  }
-  
-  /* Reversed layout for every other post-entry-2 */
-  .d-md-flex.post-entry-2.small-img.reverse-layout .thumbnail {
-    order: 1;
-  }
-  
-  .d-md-flex.post-entry-2.small-img.reverse-layout .post-meta,
-  .d-md-flex.post-entry-2.small-img.reverse-layout .h3,
-  .d-md-flex.post-entry-2.small-img.reverse-layout .p,
-  .d-md-flex.post-entry-2.small-img.reverse-layout .author {
-    order: 0;
-  }
-  
-  /* Ensuring all images have a uniform size */
-  .post-entry-2.small-img .thumbnail img {
-    width: 100%;
-    height: 200px; /* Adjust the height as needed */
-    object-fit: contain; /* Adjust as needed */
-    object-position: center; /* Adjust as needed */
-  }
-  
+
+  /*-----------------------------------------------------
+  # Current Members Page
+  ------------------------------------------------------*/
+
   .team {
     padding: 40px 0;
   }
   
-  .category-title {
+  #current-members-titles {
     text-align: center;
     margin-bottom: 40px;
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 3em;
+    font-weight: 400;
   }
   
+  /* Img styling */
+  .team-members .team-member .current-members-imgs{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+  }
   .team-members {
+    margin-top: -0.5%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center items horizontally */
+    justify-content: center;
+    align-items: center;
+    /* gap: px; Adjust the gap between team members as needed */
+  
   }
   
-  .team-member {
+  .team-members .team-member {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: calc(33.333% - 20px); /* Adjust as necessary for the desired width */
-    margin: 10px; /* Add margin for spacing between members */
-    box-sizing: border-box;
   }
   
   #guide, #visitProf {
@@ -1805,13 +1728,7 @@
     color: #007bff;
   }
   
-  .team-members {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: px; /* Adjust the gap between team members as needed */
-    padding: 20px; /* Add some padding if desired */
-  }
+
   
   .team-member {
     display: flex;
@@ -1823,26 +1740,7 @@
     box-sizing: border-box;
   }
   
-  .team-member .thumbnail {
-    width: 100%;
-    max-width: 200px;
-    margin-bottom: 10px;
-  }
   
-  .team-member .thumbnail img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  .team-member .member-info {
-    text-align: center;
-    padding: 10px 20px;
-  }
-  
-  .team-member .member-meta {
-    margin-bottom: 10px;
-  }
   
   .team-member .member-meta .title {
     font-weight: bold;
@@ -1869,6 +1767,17 @@
     color: #007bff;
   }
   
+
+  /*---------------------------------------------------------
+  # Past Members sectioin
+  -----------------------------------------------------------*/
+  #past-members-title{
+    margin-top: -0.5%;
+    margin-bottom:40px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+  }
   
   /*------------------------------------------------------------
   # M.tech Students
@@ -1883,7 +1792,8 @@
   h1 {
     text-align: center;
     font-size: 2em;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: -2%;
   }
   
   .thesis-list {
@@ -1950,6 +1860,28 @@
     display: inline-block;
     margin-top: 5px;
   } */
+  
+  /*---------------------------------------------
+  Publication section
+  ----------------------------------------------*/
+
+  #paper-heading{
+    margin-top: 9%;
+    margin-bottom: -1%;
+    font-size: 35px;
+    font-weight: 240;
+  }
+  #publication-item-body{
+    background-color: #ffffff;
+    width: 670px;
+  }
+
+  #publication-item-award{
+    background-color: #0D6EFD;
+    color: #fff;
+    width: 670px;
+    
+  }
   
   body{
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -2080,9 +2012,13 @@
 # Products page styles
 -----------------------------------------*/
 #pdt-img{
-  max-width: 350px;
+  width: 500px;
   border-radius: 12px;
   height: 200px;
+  margin-right: 20px;
+}
+#pdt-info{
+  margin-left: 40px;
 }
 
   
@@ -2093,7 +2029,7 @@
 
 
 /*--------------------------------------------------------------
-# Courses Section
+# ong-projects Section
 --------------------------------------------------------------*/
 #projects_title {
   margin-top: 130px;
@@ -2114,10 +2050,10 @@
   border-radius: 2px;
 }
 
-.courses {
+.ong-projects {
   padding: 60px 20px;
 }
-.course-item {
+.ong-project {
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -2125,7 +2061,7 @@
   overflow: hidden;
   margin: 20px 5px;
 }
-.course-item img {
+.ong-project img {
   /* max-width: 100%; */
   height: 15rem;
   width:100%;
@@ -2133,33 +2069,33 @@
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
-.course-item #tribe-img{
+.ong-project #tribe-img{
     object-fit: fill;
     height: 15rem;
     aspect-ratio: 3;
 }
-.course-content {
+.ong-project-content {
   padding: 20px;
 }
-.course-content .category {
+.ong-project-content .category {
   height: 5rem;
   font-size: 1rem;
   font-weight: 600;
   color: #000000;
 }
-.course-content .price {
+.ong-project-content .price {
   max-width: 100px;
   font-size: 16px;
   font-weight: 700;
   color: #6c757d;
 }
-.course-content h3 {
+.ong-project-content h3 {
   font-size: 18px;
   font-weight: 700;
   margin: 10px 0;
   color: #333;
 }
-.course-content .description {
+.ong-project-content .description {
   font-size: 14px;
   color: #555;
 }
@@ -2183,7 +2119,7 @@
 .trainer-rank .user-icon, .trainer-rank .heart-icon {
   color: #6c757d;
 }
-.course-item:hover {
+.ong-project:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -2742,76 +2678,25 @@
 }
 
 
-/*-----------------------------------
-  Sponsors page 
------------------------------------*/
-
-
-/* IT CAUSES ERROR WITH OTHER PAGES */
-/* 
-.project-cards-section {
-  background-color: #ffffff;
-  padding: 20px;
-  margin: 20px;
+/*-------------------------------------
+# Patents page
+---------------------------------------*/
+#patent-app-no{
+  background-color: #00a6c7;
+    color: #fff;
+    width: 670px;
 }
 
-.sponsor-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+#patent-num{
+  border-color: #00a6c7;
 }
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.col {
-  flex: 1;
-  min-width: 200px;
-  max-width: 25%;
-}
-
-.sponsor-card {
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s;
-}
-
-.sposor-card:hover {
-  transform: scale(1.05);
-}
-
-.card-image {
-  width: 100%;
-  height: auto;
-  border-bottom: 1px solid #ddd;
-}
-
-.card-content {
-  padding: 15px;
-}
-
-.card-content p {
-  margin: 10px 0;
-}
-
-.card-content strong {
-  color: #007bff;
-} 
-
-
-*/
 
 
 /*--------------------------------------------------------------
-# Services List Section
+#  List Section
 --------------------------------------------------------------*/
 #sponsors-header h2{
+  margin-top: -6%;
   margin-bottom: 80px;
   font-size: 50px;
   font-weight: 200;
@@ -2822,7 +2707,7 @@
 #sponsor-item {
   width: 400px;
   background-color: #ffffff;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   display: flex;
@@ -2841,7 +2726,7 @@
   width: 100px;
   height: 100px;
   object-fit: contain;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 
 #spons-description {
@@ -2913,20 +2798,24 @@
   height: 400px;
   object-fit: contain;
   background-color: #000000;
- 
-}
-
-
-.swiper-pagination {
-  margin-top: 20px;
-  margin-bottom: 10px;
 }
 
 
 
-.swiper-pagination-bullet-active {
-  background: #333;
+#group-pic{
+  margin-top: -9.5%;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+#group-pic img{
+  border-radius: 1px;
+  width: 85%;
+}
 
-
+#gallery-arrows{
+  
+color: #ffffff;
+}

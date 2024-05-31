@@ -8,11 +8,14 @@
   <title>Current Members</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
+  
+ <!-- Favicons -->
+ <link href="assets/img/SWAN-Logo.png" rel="icon">
+ 
+ <!-- Timeline Styles -->
+ <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+ <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/tutorials/timelines/timeline-5/assets/css/timeline-5.css">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,20 +47,15 @@
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid d-flex align-items-center">
-      
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h2 id="swan-title">Swan Lab</h2>
-        <!-- <img id="swan-logo" src="https://cse.iitkgp.ac.in/~smisra/swan/SWAN-Logo.png" alt="swan-logo"> -->
-        <!-- <h1>Swan</h1> -->
-        
+      <a  id="swan-logoT"  href="index.html" class="logo d-flex align-items-center">
+        <img id="swan-logo" src="https://cse.iitkgp.ac.in/~smisra/swan/SWAN-Logo.png" alt="swan-logo">
+        <h2 id="swan-title">SWAN</h2>
       </a>
       <br>
   
       <nav id="navbar" class="navbar mx-auto">
         <ul>
-          <!-- <li> <a href="#announce"><h5>Announcements</h5></a></li> -->
+          <li class="dropdown"><a href="index.html"><span><h5>Home</h5></span></a>
           <li class="dropdown"><a href="current-members.html"><span><h5>Members</h5></span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="current-members.html">Current Members</a></li>
@@ -71,120 +69,38 @@
                  
                 </ul>
               </li>
-              <!-- <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li> -->
             </ul>
           </li>
-          <li class="dropdown"><a href="publications.html"><span><h5>Publications</h5></span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="awardPapers.html"><span><h5>Publications</h5></span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="search-result.html">Award Winning Papers</a></li>
-              <li><a href="#">Journal Papers</a></li>
-              <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li> -->
-              <li><a href="#">Conference Papers</a></li>
-              <li><a href="#">Book Chapters</a></li>
-              <li><a href="#">Authored Books</a></li>
-              <li><a href="#">Edited Books</a></li>
+              <li><a href="awardPapers.html">Award Winning Papers</a></li>
+              <li><a href="journalPapers.html">Journal Papers</a></li>
+              <li><a href="conferencePapers.html">Conference Papers</a></li>
+              <li><a href="bookChapters.html">Book Chapters</a></li>
+              <li><a href="authoredBooks.html">Authored Books</a></li>
+              <li><a href="editedBooks.html">Edited Books</a></li>
               
             </ul>
           </li>
-          <li class="dropdown"><a href="products.html"><span><h5>Products</h5></span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="search-result.html">Search Result</a></li>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
+          <li class="dropdown"><a href="products.html"><span><h5>Products</h5></span></a>
+           
           </li>
-          <li class="dropdown"><a href="products.html"><span><h5>Patents</h5></span> </i></a>
-            <!-- <ul>
-              <li><a href="search-result.html">Search Result</a></li>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul> -->
+          <li class="dropdown"><a href="patents.html"><span><h5>Patents</h5></span><i class="bi bi-chevron-down dropdown-indicator"></i> </i></a>
+            <ul>
+              <li><a href="#">Filed Patent</a></li>
+              <li><a href="#">Granted Patent</a></li>
+             
+            </ul>
           </li>
           <li class="dropdown"><a href="projects.html"><span><h5>Projects</h5></span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="search-result.html">Search Result</a></li>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="projects.html">Ongoing Projects</a></li>
+              <li><a href="completed-projects.html">Completed Projects</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="sponsors.html"><span><h5>Sponsors</h5></span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="search-result.html">Search Result</a></li>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
+          <li class="dropdown"><a href="sponsors.html"><span><h5>Sponsors</h5></span></a>
           </li>
-          <li class="dropdown"><a href="gallery.html"><span><h5>Gallery</h5></span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="search-result.html">Search Result</a></li>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
+          <li class="dropdown"><a href="gallery.html"><span><h5>Gallery</h5></span></a>
           </li>
        
         </ul>
@@ -201,7 +117,7 @@
 
         <!-- ======= Search Form ======= -->
         <div class="search-form-wrap js-search-form-wrap">
-          <form action="search-result.html" class="search-form">
+          <form action="awardPapers.html" class="search-form">
             <span class="icon bi-search"></span>
             <input type="text" placeholder="Search" class="form-control">
             <button class="btn js-search-close"><span class="bi-x"></span></button>
@@ -209,131 +125,269 @@
         </div><!-- End Search Form -->
 
       </div>
-      <a href="index.html" class="logo d-flex ms-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <img id="swan-logo" src="https://cse.iitkgp.ac.in/~smisra/swan/SWAN-Logo.png" alt="swan-logo">
+      <a id="iit-logoT" href="index.html" class="logo d-flex ms-auto">
+        <h2 id="iit-title">IIT-KGP</h2>
         <img id="iit-logo" src="https://cse.iitkgp.ac.in/~smisra/swan/images/iitkgp_logo.png" alt="">
       </a>
       <br>
     </div>
 
-  </header><!-- End Header -->
+  </header>
+  
+  <!-- End Header -->
 
   <main id="main">  
-    
-    
-    <!-- <div class="container-publications">
-        <h1>AWARD WINNING PAPERS</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Title</th>
-                    <th>Authors</th>
-                    <th>Publication</th>
-                    <th>Award</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1.</td>
-                    <td>MEGAN: Multipurpose Energy-Efficient, Adaptable, and Low-Cost Wireless Sensor Node for the Internet of Things</td>
-                    <td>S. Misra, S. K. Roy, A. Roy, M. S. Obaidat, A. Jha</td>
-                    <td>IEEE Systems Journal, Vol. 14, No. 1, 2020, pp. 144-151</td>
-                    <td>2020 IEEE Systems Journal Best Paper Award</td>
-                </tr>
-                <tr>
-                    <td>2.</td>
-                    <td>RILoD : Reduction of Information Loss in a WSN System in the Presence of Dumb Nodes</td>
-                    <td>P. Kar, S. Misra, M. S. Obaidat</td>
-                    <td>IEEE Systems Journal, Vol. 13, No. 1, 2019, pp. 336-344</td>
-                    <td>2020 IEEE Systems Journal Best Paper Award</td>
-                </tr>
-                <tr>
-                    <td>3.</td>
-                    <td>Soft-WSN: Software-Defined WSN Management System for IoT Applications</td>
-                    <td>S. Bera, S. Misra, S. Roy, M. S. Obaidat</td>
-                    <td>IEEE Systems Journal, vol. 12, no. 3, pp. 2074-2081, Sept. 2018</td>
-                    <td>2019 IEEE Systems Journal Best Paper Award</td>
-                </tr>
-                <tr>
-                    <td>4.</td>
-                    <td>Learning Automata based Fault-Tolerant System for Dynamic Autonomous Unmanned Vehicular Networks</td>
-                    <td>S. Misra, P. V. Krishna, V. Saritha, H. Agrawal, A. V. Vasilakos, M. S. Obaidat</td>
-                    <td>IEEE Systems Journal, Vol. 11, No. 4, 2017, pp. 2929-2938</td>
-                    <td>2018 IEEE Systems Journal Best Paper Award</td>
-                </tr>
-                <tr>
-                    <td>5.</td>
-                    <td>Learning Automaton based Context Oriented Middleware Architecture for Precision Agriculture</td>
-                    <td>P. V. Krishna, S. Misra, S. Sivanesan, M. S. Obaidat</td>
-                    <td>Proceedings of the 2015 IEEE International Conference on Computer, Information and Telecommunication Systems (CITS 2015) , Gijón, Spain, July 15-17, 2015</td>
-                    <td>Best Paper Award of the Conference</td>
-                </tr>
-            </tbody>
-        </table>
-    </div> -->
-    
-  <h1  id="paper-headin"  style="color: #000000; font-family: Georgia, 'Times New Roman', Times, serif   ;">Award Winning Papers</h1>
-<div  id="box-publications"  class="container-publications">
-  
-    <!-- <span id="page-number">1.</span> -->
-    <div id="full-paper">
-      <div id="paper-num">
-        <h2>1.</h2>
-        <i class="fas fa-star my-icon"></i>
-      </div>
-      <div class="arrow"><i class="ri-arrow-right-line"></i></div>
-      <div class="paper">
-          <p class="title">MEGAN: Multipurpose Energy-Efficient, Adaptable, and Low-Cost Wireless Sensor Node for the Internet of Things</p>
-          <p class="authors">S. Misra, S. K. Roy, A. Roy, M. S. Obaidat, A. Jha</p>
-          <p class="publication">IEEE Systems Journal, Vol. 14, No. 1, 2020, pp. 144-151</p>
-          <span class="award">2020 IEEE Systems Journal Best Paper Award</span>
-      </div>
-    </div>
-    
-    <div id="full-paper">
-      <div id="paper-num">
-        <h2>2.</h2>
-      </div>
-    <div class="paper">
-        <p class="title">RILoD : Reduction of Information Loss in a WSN System in the Presence of Dumb Nodes</p>
-        <p class="authors">P. Kar, S. Misra, M. S. Obaidat</p>
-        <p class="publication">IEEE Systems Journal, Vol. 13, No. 1, 2019, pp. 336-344</p>
-        <span class="award">2020 IEEE Systems Journal Best Paper Award</span>
-    </div>
-    </div>
+    <h1  id="paper-heading"  style="color: #000000; font-family: Georgia, 'Times New Roman', Times, serif;">Filed Patents</h1>
+<!-- Timeline 5 - Bootstrap Brain Component -->
+<section class="bsb-timeline-5 py-5 py-xl-8">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-10 col-md-8 col-xl-6">
+        <ul class="timeline">
 
-    <div id="full-paper">
-      <div id="paper-num">
-        <h2>3.</h2>
-      </div>
-    <div class="paper">
-        <p class="title">Soft-WSN: Software-Defined WSN Management System for IoT Applications</p>
-        <p class="authors">S. Bera, S. Misra, S. Roy, M. S. Obaidat</p>
-        <p class="publication">IEEE Systems Journal, vol. 12, no. 3, pp. 2074-2081, Sept. 2018</p>
-        <span class="award">2019 IEEE Systems Journal Best Paper Award</span>
-    </div>
-    </div>
 
-    <div id="full-paper">
-      <div id="paper-num">
-        <h2>4.</h2>
-      </div>
-    <div class="paper">
-        <p class="title">Learning Automata based Fault-Tolerant System for Dynamic Autonomous Unmanned Vehicular Networks</p>
-        <p class="authors">S. Misra, P. V. Krishna, V. Saritha, H. Agrawal, A. V. Vasilakos, M. S. Obaidat</p>
-        <p class="publication">IEEE Systems Journal, Vol. 11, No. 4, 2017, pp. 2929-2938</p>
-        <span class="award">2018 IEEE Systems Journal Best Paper Award</span>
-    </div>
-    </div>
+          <li id="publication-item-full" class="timeline-item">
+            <span id="patent-num" class="timeline-icon">
+              1
+            </span>
+            <div  class="timeline-body">
+              <div class="timeline-content">
+                <div id="publication-item-body" class="card text">
+                  <div id="patent-app-no"   class="card-header">Indian Patent Filed, Appl. No. 202231008007.</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Modularized IoT-based on-demand ambulatory hospital recommender system</h5>
+                    <p>S. Misra, S. Pal, A. Ghosh</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
 
-    <div id="full-paper">
-      <div id="paper-num">
-        <h2>5.</h2>
+          <li id="publication-item-full" class="timeline-item">
+            <span id="patent-num" class="timeline-icon">
+              2
+            </span>
+            <div  class="timeline-body">
+              <div class="timeline-content">
+                <div id="publication-item-body" class="card text">
+                  <div id="patent-app-no"   class="card-header">Indian Patent Filed, Application No. 202031050193 A, <br> Publication Date 20/11/2020.</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Device and Method For Measuring Hemoglobin</h5>
+                    <p>D. Das, U. Venkanna, R. Mahapatra, A. R. Sindhu, S. Misra</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <span id="patent-num" class="timeline-icon">
+              3
+            </span>
+            <div  class="timeline-body">
+                <div class="timeline-content">
+                  <div id="publication-item-body" class="card text">
+                    <div id="patent-app-no"   class="card-header">Indian Patent Filed, Application No. 202121025583.</div>
+                    <div class="card-body">
+                      <h5 class="card-title">A Method and System for Screening Crop Health Index</h5>
+                      <p>S. Misra, S. K. Roy, A. Roy, M. S. Obaidat<br>
+                        IEEE Systems Journal, vol. 12, no. 3, pp. 2074-2081, Sept. 2018</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          
+
+          <li class="timeline-item">
+            <span id="patent-num" class="timeline-icon">4</span>
+            <div class="timeline-body">
+              <div class="timeline-content">
+                <div id="publication-item-body" class="card text">
+                  <div id="patent-app-no" class="card-header">Indian Patent Filed, Application No. 202131042943.</div>
+                  <div class="card-body">
+                    <h5 class="card-title">A Multifunctional Smart Human Health Assessing Network System</h5>
+                    <p>D. Das, V. Udutalapally, S. Misra, R. Mahapatra, A.R. Sindhu</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        
+          <li class="timeline-item">
+            <span id="patent-num" class="timeline-icon">5</span>
+            <div class="timeline-body">
+              <div class="timeline-content">
+                <div id="publication-item-body" class="card text">
+                  <div id="patent-app-no" class="card-header">Indian Patent Filed, Appl. No. 202131038016, Filed on Aug 23, 2021.</div>
+                  <div class="card-body">
+                    <h5 class="card-title">A Secured Automated Power Control and Management System for Legacy IOT Infrastructures</h5>
+                    <p>S. Misra, D. Das, V. Udutalapally, A. Ghosh, P. K. Deb</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        
+          <li class="timeline-item">
+            <span id="patent-num" class="timeline-icon">6</span>
+            <div class="timeline-body">
+              <div class="timeline-content">
+                <div id="publication-item-body" class="card text">
+                  <div id="patent-app-no" class="card-header">Indian Patent Filed, Appl. No. 202131029970 A, Filed on July 3, 2021, Published on Aug 13, 2021.</div>
+                  <div class="card-body">
+                    <h5 class="card-title">End-to-End Containerized Real-Time Microservice-Based Portable Remote Health Monitoring System</h5>
+                    <p>S. Misra, A. Mukherjee, A. Roy, N. Pathak, S. Pal</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        
+          <li class="timeline-item">
+            <span id="patent-num" class="timeline-icon">7</span>
+            <div class="timeline-body">
+              <div class="timeline-content">
+                <div id="publication-item-body" class="card text">
+                  <div id="patent-app-no" class="card-header">Indian Patent Filed, File No. 202031000072, Date January 1, 2020.</div>
+                  <div class="card-body">
+                    <h5 class="card-title">A System for Real-Time Monitoring, Prediction, and Control of Weld Quality in Friction Stir Welding</h5>
+                    <p>D. Mishra, S. K. Pal, A. Gupta, P. Raj, A. Kumar, S. Anwer, D. Chakravarty, S. Pal, T. Chakravarty, A. Pal, P. Misra, S. Misra</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        
+          <li class="timeline-item">
+            <span id="patent-num" class="timeline-icon">8</span>
+            <div class="timeline-body">
+              <div class="timeline-content">
+                <div id="publication-item-body" class="card text">
+                  <div id="patent-app-no" class="card-header">Indian Patent Filed, Filed No. 201731031610, Date September 6, 2017.</div>
+                  <div class="card-body">
+                    <h5 class="card-title">A Smart Irrigation Management System using WSNs</h5>
+                    <p>S. K. Roy, S. Misra, N. S. Raghuwanshi, A. Roy</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        
+          <li class="timeline-item">
+            <span id="patent-num" class="timeline-icon">9</span>
+            <div class="timeline-body">
+              <div class="timeline-content">
+                <div id="publication-item-body" class="card text">
+                  <div id="patent-app-no" class="card-header">Indian Patent Filed File No: 201731015829, Date May 4, 2017.</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Universal Electronics Circuit Node for Supporting Multiple Heterogeneous Sensors and Actuators Concurrently</h5>
+                    <p>S. K. Roy, S. Misra, A. Roy, S. Kumar, S. Goswami</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        
+          <li class="timeline-item">
+            <span id="patent-num" class="timeline-icon">10</span>
+            <div class="timeline-body">
+              <div class="timeline-content">
+                <div id="publication-item-body" class="card text">
+                  <div id="patent-app-no" class="card-header">Indian Patent Filed, File No. 201631007632, Date March 4, 2016.</div>
+                  <div class="card-body">
+                    <h5 class="card-title">A Cloud Based Automatized System for On Demand and Without Service Delay Supply of Energy to End Users</h5>
+                    <p>A. Mondal, S. K. Roy, A. Roy, S. Misra</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        
+          <li class="timeline-item">
+            <span id="patent-num" class="timeline-icon">11</span>
+            <div class="timeline-body">
+              <div class="timeline-content">
+                <div id="publication-item-body" class="card text">
+                  <div id="patent-app-no" class="card-header">Indian Patent Filed, File No. 201631001328, Date Jan 14, 2016.</div>
+                  <div class="card-body">
+                    <h5 class="card-title">PKI Enabled Time Stamped Digital Signing System Involving Certification Authority Issues Digital Certificate Cryptographic Token with Real-Time Revocation Verification</h5>
+                    <p>S. Misra, S. Goswami, P. Kar, A. Roy</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        
+          <li class="timeline-item">
+            <span id="patent-num" class="timeline-icon">12</span>
+            <div class="timeline-body">
+              <div class="timeline-content">
+                <div id="publication-item-body" class="card text">
+                  <div id="patent-app-no" class="card-header">Indian Patent Filed, File No. 201631000214, Dated Jan 4, 2016.</div>
+                  <div class="card-body">
+                    <h5 class="card-title">A Privacy-Aware Ambulatory Healthcare System Using Wireless Body Area Networks (WBANs)</h5>
+                    <p>S. Sarkar, S. Chatterjee, S. Misra, E. A. Ansari, D. Ghatak, S. Sarkar</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        
+          <li class="timeline-item">
+            <span id="patent-num" class="timeline-icon">13</span>
+            <div class="timeline-body">
+              <div class="timeline-content">
+                <div id="publication-item-body" class="card text">
+                  <div id="patent-app-no" class="card-header">Indian Patent Filed, File No. 425/KOL/2015, Date: April 17, 2015.</div>
+                  <div class="card-body">
+                    <h5 class="card-title">An Adverse Environmental Effect Resistant Seamless Wireless Sensor Network System</h5>
+                    <p>S. Misra, A. Roy, P. Kar, S. Goswami, T. Ojha</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        
+          <li class="timeline-item">
+            <span id="patent-num" class="timeline-icon">14</span>
+            <div class="timeline-body">
+              <div class="timeline-content">
+                <div id="publication-item-body" class="card text">
+                  <div id="patent-app-no" class="card-header">Indian Patent Filed, File No. 6/KOL/2015, Date: January 5, 2015.</div>
+                  <div class="card-body">
+                    <h5 class="card-title">An Advanced Wireless Sensor Network System and Method for Accurate Information Gathering from a Radiation Affected Area</h5>
+                    <p>S. Misra, P. Kar, A. Roy, S. Goswami</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        
+          <li class="timeline-item">
+            <span id="patent-num" class="timeline-icon">15</span>
+            <div class="timeline-body">
+              <div class="timeline-content">
+                <div id="publication-item-body" class="card text">
+                  <div id="patent-app-no" class="card-header">Indian Patent Filed, File No. 1145/KOL/2014, Date: November 10, 2014.</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Sensory Network for Persuasive and Pervasive Virtualization of Physical Sensors into Renderable Real Time Service</h5>
+                    <p>S. Chatterjee, A. Roy, S. K. Roy, S. Misra, M. S. Bhogal, R. Daga</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
       </div>
-    <div class="paper">
+    </div>
+  </div>
+</section>
+    
+
+
+    <!-- <div class="paper">
         <p class="title">Learning Automaton based Context Oriented Middleware Architecture for Precision Agriculture</p>
         <p class="authors">P. V. Krishna, S. Misra, S. Sivanesan, M. S. Obaidat</p>
         <p class="publication">Proceedings of the 2015 IEEE International Conference on Computer, Information and Telecommunication Systems (CITS 2015) , Gijón, Spain, July 15-17, 2015</p>
@@ -412,7 +466,7 @@
         <div class="journal">ACM Transactions on Sensor Networks (vol. 1, no. 1, 2021, https://doi.org/10.1145/3484201)</div>
     </div>
 
-  </div>
+  </div> -->
   </main><!-- End #main -->
 
  <!-- ======= Footer ======= -->
