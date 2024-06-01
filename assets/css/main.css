@@ -2766,41 +2766,50 @@
 #gallery-slider {
   height: 500px;
   width: 100%;
-  background-color: #000000;
+  background-color: #000;
   padding: 60px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 8%;
+  position: relative;
 }
-
-#gallery .swiper-slide-active {
-  border: 5px solid #000000;
-  padding: 4px;
-  background: #000000;
-  z-index: 1;
-  transform: scale(1.15);
-  margin-top: 6px;
-}
-
 
 .swiper-wrapper {
   display: flex;
+  align-items: center;
 }
 
 .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
 }
-
 
 .swiper-slide img {
-  width: 355px;
+  width: 400px;
   height: 400px;
   object-fit: contain;
-  background-color: #000000;
+  background-color: #000;
+  border: 5px solid transparent;
 }
 
+.swiper-slide-active img {
+  padding: 0px 10px; 
+  border-color: #fff;
+  transform: scale(1.1);
+}
 
+#gallery-arrows .swiper-button-next,
+#gallery-arrows .swiper-button-prev {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+}
+
+#gallery-arrows .swiper-button-next:after,
+#gallery-arrows .swiper-button-prev:after {
+  font-size: 20px;
+}
 
 #group-pic{
   margin-top: -9.5%;
@@ -2815,7 +2824,4 @@
   width: 85%;
 }
 
-#gallery-arrows{
-  
-color: #ffffff;
-}
+
