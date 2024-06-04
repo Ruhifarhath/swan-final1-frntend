@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Swan-new</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- icon remix -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <!-- Favicons -->
+  <link href="../assets/img/SWAN-Logo.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS Files -->
+  <link href="../assets/css/variables.css" rel="stylesheet">
+  <link href="../assets/css/main.css" rel="stylesheet">
+
+  <style>
+    #iot_heading{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-top: 10%;
+        margin-right: 13%;
+    }
+    .chart-container {
+        width: 600px;
+        height: 400px;
+        overflow: auto;
+        margin-bottom: 20px;
+    }
+    .chart-container-outer {
+        margin-top: 20px;
+    }
+    .chart-container-inner {
+        width: 100%;
+        height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid d-flex align-items-center">
+      <a id="swan-logoT" href="../index.html" class="logo d-flex align-items-center">
+        <img id="swan-logo" src="https://cse.iitkgp.ac.in/~smisra/swan/SWAN-Logo.png" alt="swan-logo">
+        <h2 id="swan-title">SWAN</h2>
+      </a>
+      <nav id="navbar" class="navbar mx-auto">
+        <ul>
+          <li class="dropdown"><a href="../index.html"><span><h5>Home</h5></span></a>
+          <li class="dropdown"><a href="../current-members.html"><span><h5>Members</h5></span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="../current-members.html">Current Members</a></li>
+              <li><a href="../past-members.html">Past Members</a></li>
+              <li><a href="../mtechStudents.html">M.Tech Students</a></li>
+              <li><a href="../visiting-students.html">Visiting students</a></li>
+              <li class="dropdown"><a href="#"><span>Interns</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Nptel Interns</a></li>
+                  <li><a href="#">Summer Interns</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="../awardPapers.html"><span><h5>Publications</h5></span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="../awardPapers.html">Award Winning Papers</a></li>
+              <li><a href="../journalPapers.html">Journal Papers</a></li>
+              <li><a href="../conferencePapers.html">Conference Papers</a></li>
+              <li><a href="../bookChapters.html">Book Chapters</a></li>
+              <li><a href="../authoredBooks.html">Authored Books</a></li>
+              <li><a href="../editedBooks.html">Edited Books</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="../products.html"><span><h5>Products</h5></span></a></li>
+          <li class="dropdown"><a href="../patents.html"><span><h5>Patents</h5></span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="../patents.html">Filed Patent</a></li>
+              <li><a href="../patents.html">Granted Patent</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="../projects.html"><span><h5>Projects</h5></span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="../projects.html">Ongoing Projects</a></li>
+              <li><a href="../completed-projects.html">Completed Projects</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="../sponsors.html"><span><h5>Sponsors</h5></span></a></li>
+          <li class="dropdown"><a href="../gallery.html"><span><h5>Gallery</h5></span></a></li>
+          <li class="dropdown"><a href="../liveData.html"><span><h5>Live Data</h5></span></a></li>
+        </ul>
+      </nav>
+      <div class="position-relative">
+        <a href="#" class="mx-2 js-search-open"><span class="bi-search"></span></a>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+        <div class="search-form-wrap js-search-form-wrap">
+          <form action="search-result.html" class="search-form">
+            <span class="icon bi-search"></span>
+            <input type="text" placeholder="Search" class="form-control">
+            <button class="btn js-search-close"><span class="bi-x"></span></button>
+          </form>
+        </div>
+      </div>
+      <a id="iit-logoT" href="../index.html" class="logo d-flex ms-auto">
+        <h2 id="iit-title">IIT-KGP</h2>
+        <img id="iit-logo" src="https://cse.iitkgp.ac.in/~smisra/swan/images/iitkgp_logo.png" alt="">
+      </a>
+    </div>
+  </header>
+  <!-- Live Data section -->
+  <div class="container mt-5">
+    <h1 id="iot_heading" class="text-center">IoT Lab Sensor Data</h1>
+    <h2 id="lab-heading">Lab-1 Data</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="chart-container">
+          <canvas id="chartContainer1"></canvas>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="chart-container">
+          <canvas id="chartContainer2"></canvas>
+        </div>
+      </div>
+    </div>
+    <h2 id="lab-heading">Lab-2 Data</h2>
+    <div class="row chart-container-outer">
+      <div class="col-md-6">
+        <div class="chart-container">
+          <canvas id="chartContainer3"></canvas>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="chart-container">
+          <canvas id="chartContainer4"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+  <script src="https://cdn.jsdelivr.net/npm/socket.io-client/dist/socket.io.min.js"></script>
+  <!-- <script src="http://localhost:3000/socket.io/socket.io.js"></script> -->
+  <script src="http://127.0.0.1:5501/socket.io/socket.io.js"></script>
+
+
+  <!-- <script src="socket.io/socket.io.js"></script> -->
+  <script>
+    const socket = io('http://localhost:3000');
+    const ctx1 = document.getElementById('chartContainer1').getContext('2d');
+    const ctx2 = document.getElementById('chartContainer2').getContext('2d');
+    const ctx3 = document.getElementById('chartContainer3').getContext('2d');
+    const ctx4 = document.getElementById('chartContainer4').getContext('2d');
+
+    const data1 = { labels: [], datasets: [{ label: 'Temperature (°C)', borderColor: 'rgba(255, 99, 132, 1)', backgroundColor: 'rgba(255, 99, 132, 0.2)', data: [], fill: false }] };
+    const data2 = { labels: [], datasets: [{ label: 'Humidity (%)', borderColor: 'rgba(54, 162, 235, 1)', backgroundColor: 'rgba(54, 162, 235, 0.2)', data: [], fill: false }] };
+    const data3 = { labels: [], datasets: [{ label: 'Temperature (°C)', borderColor: 'rgba(255, 99, 132, 1)', backgroundColor: 'rgba(255, 99, 132, 0.2)', data: [], fill: false }] };
+    const data4 = { labels: [], datasets: [{ label: 'Humidity (%)', borderColor: 'rgba(54, 162, 235, 1)', backgroundColor: 'rgba(54, 162, 235, 0.2)', data: [], fill: false }] };
+
+    const options = {
+        scales: {
+            x: { type: 'time', time: { unit: 'second', tooltipFormat: 'll HH:mm:ss' }, title: { display: true, text: 'Time' } },
+            y: { title: { display: true, text: 'Value' } }
+        },
+        plugins: { legend: { display: true, position: 'top' } },
+        responsive: true,
+        maintainAspectRatio: false
+    };
+
+    const chart1 = new Chart(ctx1, { type: 'line', data: data1, options: options });
+    const chart2 = new Chart(ctx2, { type: 'line', data: data2, options: options });
+    const chart3 = new Chart(ctx3, { type: 'line', data: data3, options: options });    
+    const chart4 = new Chart(ctx4, { type: 'line', data: data4, options: options });
+
+    socket.on('sensorData', (sensorData) => {
+        const time = new Date();
+        if (data1.labels.length > 10) { data1.labels.shift(); data1.datasets[0].data.shift(); }
+        if (data2.labels.length > 10) { data2.labels.shift(); data2.datasets[0].data.shift(); }
+        if (data3.labels.length > 10) { data3.labels.shift(); data3.datasets[0].data.shift(); }
+        if (data4.labels.length > 10) { data4.labels.shift(); data4.datasets[0].data.shift(); }
+        data1.labels.push(time); data1.datasets[0].data.push({ x: time, y: sensorData.temperature });
+        data2.labels.push(time); data2.datasets[0].data.push({ x: time, y: sensorData.humidity });
+        data3.labels.push(time); data3.datasets[0].data.push({ x: time, y: sensorData.temperature });
+        data4.labels.push(time); data4.datasets[0].data.push({ x: time, y: sensorData.humidity });
+        chart1.update(); chart2.update(); chart3.update(); chart4.update();
+    });
+  </script>
+</body>
+</html>
