@@ -8,6 +8,7 @@
   <title>Past Members</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
    <!-- Favicons -->
    <link href="assets/img/SWAN-Logo.png" rel="icon">
@@ -182,7 +183,7 @@
               West Bengal, India, 721 302</li> <br>
             <li><strong>Phone:</strong>+91-3222-282338</li>
             <li><strong>Email:</strong> sudip@iitkgp.ac.in</li>
-            <li><strong>Website:</strong>https://cse.iitkgp.ac.in/~smisra/</li>
+            \<li><strong>Website:</strong><a href="https://cse.iitkgp.ac.in/~smisra/" style="color: #ffffff;"> https://cse.iitkgp.ac.in/~smisra/ </a></li>
           </ul>
         </div>
         <div class="col-6 col-lg-2">
@@ -269,6 +270,20 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+    <!-- Navbar Highlight Logic -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          const currentPath = window.location.pathname.split('/').pop();
+          const navbarLinks = document.querySelectorAll('#navbar ul li a');
+  
+          navbarLinks.forEach(link => {
+              const href = link.getAttribute('href').split('/').pop();
+              if (href === currentPath) {
+                  link.parentElement.classList.add('active');
+              }
+          });
+      });
+  </script>
 </body>
 
 </html>

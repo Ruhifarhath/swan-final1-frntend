@@ -108,8 +108,22 @@
   #hero-slider #home-slide-img{
     width: 100%;
     height: 500px;
+    
   }
+ /* Custom CSS for hover effect */
+ #navbar ul li a {
+  position: relative;
+  border-radius: 1px;
+  text-decoration: none;
+  color: inherit;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
 
+#navbar ul li a:hover,
+#navbar ul li.active a {
+  background-color: rgba(0, 0, 0, 0.1); /* Adjust the color and opacity as needed */
+}
   /*--------------------------------------------------------------
   # CountsAndAnnounce
   --------------------------------------------------------------*/
@@ -1456,64 +1470,7 @@
     font-weight: 700;
     margin-bottom: 20px;
   }
-  
-  .php-email-form {
-    width: 100%;
-  }
-  
-  .php-email-form .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .php-email-form .form-control {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .php-email-form button[type="submit"] {
-    background: #3498db;
-    border: 0;
-    padding: 10px 24px;
-    color: #fff;
-    transition: 0.4s;
-    border-radius: 4px;
-  }
-  
-  .php-email-form button[type="submit"]:hover {
-    background: #2980b9;
-  }
-  
-  .php-email-form .loading {
-    display: none;
-    background: #fff3cd;
-    padding: 10px 15px;
-    margin-bottom: 10px;
-    text-align: center;
-    color: #856404;
-    border-radius: 4px;
-  }
-  
-  .php-email-form .error-message {
-    display: none;
-    background: #f8d7da;
-    padding: 10px 15px;
-    margin-bottom: 10px;
-    text-align: center;
-    color: #721c24;
-    border-radius: 4px;
-  }
-  
-  .php-email-form .sent-message {
-    display: none;
-    background: #d4edda;
-    padding: 10px 15px;
-    margin-bottom: 10px;
-    text-align: center;
-    color: #155724;
-    border-radius: 4px;
-  }
-  
+ 
   .footer {
     overflow: hidden;
     background: rgba(var(--color-black-rgb), 0.9);
