@@ -1594,136 +1594,114 @@
   /*-----------------------------------------------------
   # Current Members Page
   ------------------------------------------------------*/
+/* Base styles for larger screens */
+.team {
+  padding: 40px 0;
+}
 
-  .team {
-    padding: 40px 0;
-  }
-  
-  #current-members-titles {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 3em;
-    font-weight: 400;
-  }
-  
-  /* Img styling */
-  .team-members .team-member .current-members-imgs{
-    width: 200px;
-    height: 250px;
-    object-fit: cover;
-  }
-  .team-members {
-    margin-top: -0.5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    /* gap: px; Adjust the gap between team members as needed */
-  
-  }
-  
+#current-members-titles {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 3em;
+  font-weight: 400;
+}
+
+/* Img styling */
+.team-members .team-member .current-members-imgs{
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.team-members {
+  margin-top: -0.5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* gap: px; Adjust the gap between team members as needed */
+}
+
+.team-members .team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(33.333% - 20px);
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+
+.team-member .thumbnail {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
+.team-member .thumbnail img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.team-member .member-info {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.team-member .member-meta {
+  margin-bottom: 10px;
+}
+
+.team-member .member-meta .title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.team-member .name {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.team-member .description {
+  margin-bottom: 20px;
+}
+
+.team-member .social-links a {
+  margin-right: 10px;
+  font-size: 1.2em;
+  color: #333;
+  text-decoration: none;
+}
+
+.team-member .social-links a:hover {
+  color: #007bff;
+}
+
+#guide, #visitProf {
+  width: 100%; /* Ensure these are full width to center align */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Add margin to space between these sections */
+}
+
+#guide .team-member, #visitProf .team-member {
+  width: auto; /* Allow the content to auto-size */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .team-members .team-member {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: calc(50% - 20px);
   }
-  
-  #guide, #visitProf {
-    width: 100%; /* Ensure these are full width to center align */
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px; /* Add margin to space between these sections */
-  }
-  
-  #guide .team-member, #visitProf .team-member {
-    width: auto; /* Allow the content to auto-size */
-  }
-  
-  .team-member .thumbnail {
-    width: 100%;
-    max-width: 200px;
-    margin-bottom: 10px;
-  }
-  
-  .team-member .thumbnail img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  .team-member .member-info {
-    text-align: center;
-    padding: 10px 20px;
-  }
-  
-  .team-member .member-meta {
-    margin-bottom: 10px;
-  }
-  
-  .team-member .member-meta .title {
-    font-weight: bold;
-    font-size: 1.2em;
-  }
-  
-  .team-member .name {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-  
-  .team-member .description {
-    margin-bottom: 20px;
-  }
-  
-  .team-member .social-links a {
-    margin-right: 10px;
-    font-size: 1.2em;
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .team-member .social-links a:hover {
-    color: #007bff;
-  }
-  
+}
 
-  
-  .team-member {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: calc(33.333% - 20px);
-    margin-bottom: 30px;
-    box-sizing: border-box;
-  }
-  
-  
-  
-  .team-member .member-meta .title {
-    font-weight: bold;
-    font-size: 1.2em;
-  }
-  
-  .team-member .name {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-  
-  .team-member .description {
+@media (max-width: 480px) {
+  .team-members .team-member {
+    width: 100%;
     margin-bottom: 20px;
   }
-  
-  .team-member .social-links a {
-    margin-right: 10px;
-    font-size: 1.2em;
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .team-member .social-links a:hover {
-    color: #007bff;
-  }
-  
+}
+
 
   /*---------------------------------------------------------
   # Past Members sectioin
