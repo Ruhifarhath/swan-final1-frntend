@@ -1,4 +1,4 @@
-﻿# feontend almost complte-
+
 Left Out:
  login button on navbar
 live data npm start button
