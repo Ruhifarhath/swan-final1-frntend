@@ -11,9 +11,6 @@
   
  <!-- Favicons -->
  <link href="assets/img/SWAN-Logo.png" rel="icon">
-
- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
  
  <!-- Timeline Styles -->
  <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
@@ -30,7 +27,6 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  
 
   <!-- Template Main CSS Files -->
   <link href="assets/css/variables.css" rel="stylesheet">
@@ -105,7 +101,7 @@
           <li class="dropdown"><a href="sponsors.html"><span><h5>Sponsors</h5></span></a>
           </li>
           <li class="dropdown"><a href="gallery.html"><span><h5>Gallery</h5></span></a>
-          <li class="dropdown"><a href="public/liveData.html"><span><h5>Live Data</h5></span></a>
+          <li class="dropdown"><a href="liveData.html"><span><h5>Live Data</h5></span></a>
           </li>
        
         </ul>
@@ -147,7 +143,7 @@
 <section class="bsb-timeline-5 py-5 py-xl-8">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-10 col-md-8 col-xl-6">
+      <div class="col-12 col-md-10 col-xl-8">
         <ul class="timeline">
 
           
@@ -274,7 +270,7 @@
               West Bengal, India, 721 302</li> <br>
             <li><strong>Phone:</strong>+91-3222-282338</li>
             <li><strong>Email:</strong> sudip@iitkgp.ac.in</li>
-            <li><strong>Website:</strong><a href="https://cse.iitkgp.ac.in/~smisra/" style="color: #ffffff;"> https://cse.iitkgp.ac.in/~smisra/ </a></li>
+            <li><strong>Website:</strong>https://cse.iitkgp.ac.in/~smisra/</li>
           </ul>
         </div>
         <div class="col-6 col-lg-2">
@@ -287,7 +283,7 @@
             <li><a href="projects.html"><i class="bi bi-chevron-right"></i>Projects</a></li>
             <li><a href="sponsors.html"><i class="bi bi-chevron-right"></i>Sponsors</a></li>
             <li><a href="gallery.html"><i class="bi bi-chevron-right"></i>Gallery</a></li>
-            <li><a href="public/liveData.html"><i class="bi bi-chevron-right"></i>Live Data</a></li>
+            <li><a href="liveData.html"><i class="bi bi-chevron-right"></i>Live Data</a></li>
           </ul>
         </div>
         <div class="col-6 col-lg-2">
@@ -360,21 +356,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
-    <!-- Navbar Highlight Logic -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-          const currentPath = window.location.pathname.split('/').pop();
-          const navbarLinks = document.querySelectorAll('#navbar ul li a');
-  
-          navbarLinks.forEach(link => {
-              const href = link.getAttribute('href').split('/').pop();
-              if (href === currentPath) {
-                  link.parentElement.classList.add('active');
-              }
-          });
-      });
-  </script>
 
 </body>
 
