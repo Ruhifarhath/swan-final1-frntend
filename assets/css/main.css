@@ -132,7 +132,13 @@
     margin-top: -10%;
   }
 
-  /*-------------------------------------------------------------
+  #counts-div{
+    margin: -30px;
+  }
+  #count-box{
+    margin-top: -3%;
+  }
+   /*-------------------------------------------------------------
   # facts( we are a group of part)
   --------------------------------------------------------------*/
   #facts{
@@ -142,11 +148,65 @@
     font-size: 30px;
     font-weight: 500;
   }
-  #facts #count-box p{
+  #facts .count-box p{
     /* margin-top: -20px;  MARGIN STYLES NOT BEING*/
     font-family: var(--font-primary);
   }
 
+  #facts {
+    padding: 40px 0;
+    background-color: #ffffff;
+}
+
+#facts .section-header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#facts h1 {
+    font-size: 36px;
+    font-weight: 300;
+    color: #333;
+}
+
+#facts .count-box {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 11px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* transition: transform 0.3s ease-in-out; */
+}
+
+#facts .count-box i {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#facts .count-box h3 {
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin: 10px 0;
+}
+
+#facts .count-box p {
+    font-size: 18px;
+    color: #666;
+}
+/* 
+#facts .count-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+} */
+
+@media (max-width: 768px) {
+    #facts .count-box {
+        margin-bottom: 30px;
+    }
+}
 
   /*--------------------------------------------------------------
   # Scroll top button
@@ -295,49 +355,60 @@
     scroll-margin-top: 70px;
   }
   
-  /*--------------------------------------------------------------
-  # Services- Domains of Research
-  --------------------------------------------------------------*/
-  #dor #section-title h1{
-      font-size: 40px;
-      font-weight: 100;
-  }
-  .dor .icon-box {
-    text-align: center;
-    border-radius: 2px;
-    padding: 40px 30px;
-    transition: all ease-in-out 0.3s;
-    background: #f9f9f9ab;
-  }
-  
-  .dor .icon-box img {
-      border-radius: 4px;
-      height: 250px;
-      width: 350px;
-  }
-   
-  .dor .icon-box h4 {
-    font-weight: 500;
-    margin: 15px;
-    font-size: 24px;
-  }
-  
-  .dor .icon-box h4 a {
-    color: #151515;
-    transition: ease-in-out 0.3s;
-  }
-  
+ /*--------------------------------------------------------------
+# Services - Domains of Research
+--------------------------------------------------------------*/
+#dor{
+  margin-top: -2%;
+}
+#dor #section-title h1 {
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 40px;
+}
 
-  .dor .icon-box p {
-    line-height: 24px;
-    font-size: 14px;
-    margin-bottom: 0;
+#dor .icon-box {
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 20px;
+  transition: all 0.3s ease-in-out;
+  background: #dfdfdf;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#dor .icon-box img {
+  border-radius: 12px;
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+#dor .icon-box h4 {
+  color: #333;
+  font-weight: 600;
+  margin: 20px 0 10px;
+  font-size: 22px;
+}
+
+#dor .icon-box p {
+  color: #666;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+#dor .icon-box:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px);
+}
+
+@media (max-width: 991px) {
+  #dor .icon-box {
+    margin-bottom: 30px;
   }
-  
-  .dor .icon-box:hover {
-    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
-    transform: translateY(-10px);
-  }
+}
+
 
   /*--------------------------------------------------------------
   # Desktop Navigation 
@@ -1796,7 +1867,7 @@
     margin-top: 5px;
   } */
   
-  /*---------------------------------------------
+   /*---------------------------------------------
   Publication section
   ----------------------------------------------*/
 
@@ -1808,15 +1879,81 @@
   }
   #publication-item-body{
     background-color: #ffffff;
-    width: 670px;
+    /* width: 670px; */
   }
 
   #publication-item-award{
     background-color: #0D6EFD;
     color: #fff;
-    width: 670px;
+    /* width: 670px; */
     
   }
+
+.timeline {
+  list-style: decimal;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 30px;
+}
+
+.timeline-item .timeline-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  /* background-color: #0D6EFD;M */
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+}
+
+
+.timeline-item .timeline-content .card {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Media query for devices with a max width of 768px (tablets, small screens) */
+@media (max-width: 1000px) {
+  .timeline-item {
+    padding-left: 20px;
+  }
+  .timeline-item .timeline-icon {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+  }
+  .timeline-item .timeline-body {
+    padding: 8px;
+  }
+}
+
+/* Media query for devices with a max width of 480px (mobile devices) */
+@media (max-width: 480px) {
+  .timeline-item {
+    padding-left: 10px;
+  }
+  .timeline-item .timeline-icon {
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+  }
+  .timeline-item .timeline-body {
+    padding: 6px;
+  }
+  .timeline-item .timeline-content .card {
+    width: 100%;
+  }
+}
+
   
   body{
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -1941,25 +2078,90 @@
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   }
+  /* Adjustments for mobile responsiveness */
+@media (max-width: 991px) {
+  .timeline-item {
+    margin-bottom: 30px;
+  }
   
+  .timeline-body {
+    padding-left: 10px;
+  }
+  
+  .card-header, .card-body {
+    width: 100%;
+  }
+  
+  .card-header {
+    font-size: 14px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+  }
+  
+  .card-body {
+    padding: 10px;
+  }
+  
+  .timeline-icon {
+    font-size: 18px;
+  }
+  
+  .timeline-content {
+    padding-left: 10px;
+  }
+}
 
 /*-----------------------------------------
 # Products page styles
 -----------------------------------------*/
-#pdt-img{
-  width: 500px;
+#pdt-img {
+  width: 300px; /* fixed width */
+  height: 200px; /* fixed height */
   border-radius: 12px;
-  height: 200px;
   margin-right: 20px;
 }
-#pdt-info{
-  margin-left: 40px;
+
+#pdt-info {
+  flex: 1; /* Allows the content to take the remaining space */
+  margin-left: 20px;
 }
 
-  
+#product-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
 
+@media (max-width: 768px) {
+  #product-item {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  #pdt-img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 
+  #pdt-info {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  #pdt-img {
+    width: 100%; /* Make the image take the full width on small screens */
+    height: auto; /* Adjust height automatically */
+  }
+
+  #pdt-info {
+    width: 100%;
+    margin-left: 0;
+  }
+}
 
 
 
@@ -2127,7 +2329,19 @@
 }
 
 
-
+.workshop-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+#workshop a{
+  background-color: #007bff;
+  color: #fff;
+  padding: 6px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
 /*--------------------------------------------------------------
 # Blog Details Page
 --------------------------------------------------------------*/
@@ -2699,7 +2913,7 @@
 }
 
 #gallery-slider {
-  height: 500px;
+  /* height: 500px; */
   width: 100%;
   background-color: #000;
   padding: 60px;
@@ -2721,9 +2935,9 @@
 }
 
 .swiper-slide img {
-  width: 400px;
-  height: 400px;
-  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
   background-color: #000;
   border: 5px solid transparent;
 }
@@ -2758,6 +2972,8 @@
   border-radius: 1px;
   width: 85%;
 }
+
+
 
 
 #iot_heading{
